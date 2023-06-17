@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>고구마</title>
+    <script src="./js/index.js"></script>
   </head>
   <body>
-    <table border="1">
+    <form>
+      <input placeholder="상품 코드" class="title" />
+      <input placeholder="품목" class="body" />
+      <input type="number" min="0" placeholder="수량" class="description" />
+      <button onclick="handleClick(event)">등록</button>
+    </form>
+    <table border="1" class="table">
       <tr>
         <th>상품 코드</th>
         <th>품목</th>
